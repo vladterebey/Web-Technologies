@@ -1,0 +1,12 @@
+package com.entity;
+
+public class BookDtls {
+	private int boolId;
+	private String bookName;
+	private String author;
+	private Double price;
+	private String bookCategory;
+	private String status;
+	private String photoPath;
+	private String 
+}

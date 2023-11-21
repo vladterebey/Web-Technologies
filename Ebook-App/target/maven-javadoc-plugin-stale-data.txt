@@ -1,0 +1,63 @@
+@options
+@argfile
+-classpath
+'C:/Users/user/.m2/repository/jakarta/servlet/jakarta.servlet-api/5.0.0/jakarta.servlet-api-5.0.0.jar;C:/Users/user/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar;C:/Users/user/.m2/repository/jakarta/servlet/jsp/jstl/jakarta.servlet.jsp.jstl-api/2.0.0/jakarta.servlet.jsp.jstl-api-2.0.0.jar;C:/Users/user/.m2/repository/jakarta/el/jakarta.el-api/4.0.0/jakarta.el-api-4.0.0.jar;C:/Users/user/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/3.0.0/jakarta.xml.bind-api-3.0.0.jar;C:/Users/user/.m2/repository/com/sun/activation/jakarta.activation/2.0.0/jakarta.activation-2.0.0.jar;C:/Users/user/.m2/repository/org/glassfish/web/jakarta.servlet.jsp.jstl/2.0.0/jakarta.servlet.jsp.jstl-2.0.0.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'D:/Eclipse_workspace/Ebook/Ebook-App/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'D:/Eclipse_workspace/Ebook/Ebook-App/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Ebook-App Maven Webapp 0.0.1-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'Ebook-App Maven Webapp 0.0.1-SNAPSHOT API'
+'D:/Eclipse_workspace/Ebook/Ebook-App/src/main/java/com/admin/servlet/BookDeleteServlet.java'
+'D:/Eclipse_workspace/Ebook/Ebook-App/src/main/java/com/admin/servlet/BooksAdd.java'
+'D:/Eclipse_workspace/Ebook/Ebook-App/src/main/java/com/admin/servlet/EditBooksServlet.java'
+'D:/Eclipse_workspace/Ebook/Ebook-App/src/main/java/com/dao/BookDao.java'
+'D:/Eclipse_workspace/Ebook/Ebook-App/src/main/java/com/dao/BookDaoImpl.java'
+'D:/Eclipse_workspace/Ebook/Ebook-App/src/main/java/com/dao/UserDao.java'
+'D:/Eclipse_workspace/Ebook/Ebook-App/src/main/java/com/dao/UserDaoImpl.java'
+'D:/Eclipse_workspace/Ebook/Ebook-App/src/main/java/com/db/DbConnect.java'
+'D:/Eclipse_workspace/Ebook/Ebook-App/src/main/java/com/entity/BookDtls.java'
+'D:/Eclipse_workspace/Ebook/Ebook-App/src/main/java/com/entity/User.java'
+'D:/Eclipse_workspace/Ebook/Ebook-App/src/main/java/com/user/servlet/LoginServlet.java'
+'D:/Eclipse_workspace/Ebook/Ebook-App/src/main/java/com/user/servlet/Logout.java'
+'D:/Eclipse_workspace/Ebook/Ebook-App/src/main/java/com/user/servlet/RegisterServlet.java'
+C:\Users\user\.m2\repository\jakarta\servlet\jakarta.servlet-api\5.0.0\jakarta.servlet-api-5.0.0.jar = 1700121986889
+C:\Users\user\.m2\repository\javax\servlet\jstl\1.2\jstl-1.2.jar = 1700321676916
+C:\Users\user\.m2\repository\jakarta\servlet\jsp\jstl\jakarta.servlet.jsp.jstl-api\2.0.0\jakarta.servlet.jsp.jstl-api-2.0.0.jar = 1700322524523
+C:\Users\user\.m2\repository\jakarta\el\jakarta.el-api\4.0.0\jakarta.el-api-4.0.0.jar = 1700322524680
+C:\Users\user\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\3.0.0\jakarta.xml.bind-api-3.0.0.jar = 1700322524722
+C:\Users\user\.m2\repository\com\sun\activation\jakarta.activation\2.0.0\jakarta.activation-2.0.0.jar = 1700322524705
+C:\Users\user\.m2\repository\org\glassfish\web\jakarta.servlet.jsp.jstl\2.0.0\jakarta.servlet.jsp.jstl-2.0.0.jar = 1700322569110
+D:\Eclipse_workspace\Ebook\Ebook-App\src\main\java = 1700146403255
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\allclasses-index.html = 1700466893042
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\allpackages-index.html = 1700466893048
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\element-list = 1700466892843
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\help-doc.html = 1700466893083
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\index-all.html = 1700466893073
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\index.html = 1700466893026
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\jquery-ui.overrides.css = 1700466893113
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\member-search-index.js = 1700466893053
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\module-search-index.js = 1700466893048
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\overview-summary.html = 1700466893073
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\overview-tree.html = 1700466893018
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\package-search-index.js = 1700466893053
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\script.js = 1700466893089
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\search.js = 1700466893093
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\serialized-form.html = 1700466892933
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\stylesheet.css = 1700466893088
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\tag-search-index.js = 1700466893058
+D:\Eclipse_workspace\Ebook\Ebook-App\target\site\apidocs\type-search-index.js = 1700466893053

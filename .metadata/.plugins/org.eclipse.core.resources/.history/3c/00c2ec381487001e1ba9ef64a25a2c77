@@ -1,0 +1,7 @@
+package com.admin.servlet;
+
+
+@WebServlet("/delete_books")
+public class BookDeleteServlet {
+
+}

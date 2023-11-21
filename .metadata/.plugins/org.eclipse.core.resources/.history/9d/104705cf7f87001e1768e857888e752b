@@ -1,0 +1,8 @@
+package com.dao;
+
+public class DaoFactory {
+	public static final DaoFactory INSTANCE = new DaoFactory();
+
+	private DaoFactory() {
+	}
+}

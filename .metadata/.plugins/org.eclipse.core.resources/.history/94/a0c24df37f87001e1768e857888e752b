@@ -1,0 +1,19 @@
+package com.dao;
+
+public class DaoFactory {
+	public static final DaoFactory INSTANCE = new DaoFactory();
+
+	public BookDao bookDao = new BookDaoImpl();
+	public UserDao userDao = new UserDaoImpl();
+
+	private DaoFactory() {
+	}
+
+	public BookDao getBookDao() {
+		return bookDao;
+	}
+
+	public UserDao getUserDao() {
+		return userDao;
+	}
+}

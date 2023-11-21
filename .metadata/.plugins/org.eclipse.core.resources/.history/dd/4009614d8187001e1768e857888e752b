@@ -1,0 +1,28 @@
+package com.dao;
+
+import com.entity.User;
+
+/**
+ * The UserDao interface represents operations related to managing user entities in a data store.
+ * Implementations of this interface provide methods to register new users and perform login operations.
+ */
+public interface UserDao {
+
+    /**
+     * Registers a new user in the data store.
+     *
+     * @param user The User object to be registered.
+     * @return true if the user is successfully registered, false otherwise.
+     */
+    public boolean userRegister(User user);
+
+    /**
+     * Performs a login operation using the provided email and password.
+     *
+     * @param email    The email of the user attempting to log in.
+     * @param password The password of the user attempting to log in.
+     * @return The User object representing the logged-in user if login is successful, or null if login fails.
+     */
+    public User login(String email, String password);
+}
+

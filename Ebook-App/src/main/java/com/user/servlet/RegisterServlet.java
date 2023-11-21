@@ -1,0 +1,64 @@
+package com.user.servlet;
+
+import java.io.IOException;
+
+import com.db.DbConnect;
+import com.entity.User;
+import com.dao.UserDaoImpl;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+@WebServlet("/register")
+public class RegisterServlet extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		try {
+			String name = req.getParameter("fname");
+			String email = req.getParameter("email");
+			String phone_num = req.getParameter("phno");
+			String password = req.getParameter("password");
+			String check = req.getParameter("check");
+			
+			//System.out.println(name + " " + email + " " + password + " " + phone_num + " " + check);
+			
+			User user = new User();
+			user.setName(name);
+			user.setEmail(email);
+			user.setPhone_num(phone_num);
+			user.setPassword(password);
+			
+			HttpSession session = req.getSession();
+			
+			
+			UserDaoImpl dao = new UserDaoImpl(DbConnect.getConn());
+			boolean f = dao.userRegister(user);
+			if (f)
+			{
+				session.setAttribute("succMsg", "Register successfully");
+				resp.sendRedirect("register.jsp");
+			} else {
+				session.setAttribute("failedMsg", "Something wrong on server");
+				resp.sendRedirect("register.jsp");
+			}
+
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
+	
+}

@@ -1,0 +1,32 @@
+package com.admin.servlet;
+
+import java.io.IOException;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.Part;
+
+@WebServlet("/add_books")
+public class BooksAdd extends HttpServlet{
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		try {
+			String bookName = req.getParameter("");
+			String author = req.getParameter("");
+			Double price = Double.parseDouble(req.getParameter(""));
+			String category = req.getParameter("");
+			String status = req.getParameter("");
+			Part part = req.getPart("");
+			String filePath = part.getSubmittedFileName("");
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+}

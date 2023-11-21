@@ -1,0 +1,8 @@
+package com.user.servlet;
+
+import jakarta.servlet.annotation.WebServlet;
+
+@WebServlet("/logout")
+public class Logout extends HttpServlet{
+
+}

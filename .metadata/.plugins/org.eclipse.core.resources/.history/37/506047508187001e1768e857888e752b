@@ -1,0 +1,55 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.util.List;
+
+import com.entity.BookDtls;
+
+/**
+ * The BookDao interface represents operations related to managing books in a data store.
+ * Implementations of this interface provide methods to perform CRUD (Create, Read, Update, Delete) operations
+ * on BookDtls entities.
+ */
+public interface BookDao {
+
+	public UserDao setConnection(Connection connection);
+
+    /**
+     * Adds a book to the data store.
+     *
+     * @param b The BookDtls object to be added.
+     * @return true if the book is successfully added, false otherwise.
+     */
+    public boolean addBooks(BookDtls b);
+
+    /**
+     * Retrieves all books from the data store.
+     *
+     * @return A List of BookDtls objects representing all available books.
+     */
+    public List<BookDtls> getAllBooks();
+
+    /**
+     * Retrieves a specific book from the data store based on the provided ID.
+     *
+     * @param id The unique identifier of the book to retrieve.
+     * @return The BookDtls object representing the book with the provided ID, or null if not found.
+     */
+    public BookDtls getBookById(int id);
+
+    /**
+     * Updates the information of an existing book in the data store.
+     *
+     * @param b The BookDtls object containing updated information.
+     * @return true if the book information is successfully updated, false otherwise.
+     */
+    public boolean updateEditBooks(BookDtls b);
+
+    /**
+     * Deletes a book from the data store based on the provided ID.
+     *
+     * @param id The unique identifier of the book to delete.
+     * @return true if the book is successfully deleted, false otherwise.
+     */
+    public boolean deleteBooks(int id);
+}
